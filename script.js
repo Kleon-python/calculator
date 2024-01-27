@@ -10,9 +10,10 @@ function clearDisplay() {
 
 function calculateResult() {
     try {
-        // Use the math.evaluate function for safe mathematical evaluations
-        display.value = math.evaluate(display.value);
+        // Use eval for basic mathematical evaluations
+        document.getElementById('display').value = eval(document.getElementById('display').value);
     } catch (error) {
-        display.value = "Error";
+        document.getElementById('display').value = 'Error';
     }
 }
+
