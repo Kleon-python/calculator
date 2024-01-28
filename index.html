@@ -13,11 +13,12 @@
 <body>
     <div class="line"></div>
     <div id="calculator">
-        <input type="text" id="display"></input>
+        <label type="text" id="display"></label>
         <br>
-        <br>
+        
         <button id="clear" onclick="clearDisplay()">C</button>
-        <button id="colored" onclick="appendToDisplay('/')">/</button>
+        <button id="colored" onclick="backspace()">⌫</button>
+        <button id="colored" onclick="appendToDisplay('/')">÷</button>
         <br>
         <button id="button" onclick="appendToDisplay('7')">7</button>
         <button id="button" onclick="appendToDisplay('8')">8</button>
@@ -32,7 +33,7 @@
         <button id="button" onclick="appendToDisplay('1')">1</button>
         <button id="button" onclick="appendToDisplay('2')">2</button>
         <button id="button" onclick="appendToDisplay('3')">3</button>
-        <button id="colored" onclick="appendToDisplay('*')">*</button>
+        <button id="colored" onclick="appendToDisplay('*')">×</button>
         <br>
         <button id="button0" onclick="appendToDisplay('0')">0</button>
         <button id="button" onclick="appendToDisplay('.')">.</button>
